@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Кухня для людей — кухни на заказ от собственного производства. Бесплатный замер и проект, изготовление от 14 дней, бесплатная доставка в пределах МКАД.">
+<meta name="theme-color" content="#f4f1eb">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="author" content="Кухня для людей">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Кухня для людей — кухни на заказ">
+<meta property="og:description" content="Подберите материал и планировку кухни. Обсудим ваш проект и подготовим индивидуальный расчёт.">
+<meta property="og:locale" content="ru_RU">
+<title>Кухня для людей — кухни, созданные для жизни</title>
+<style>
+:root{--ink:#20221f;--muted:#73766e;--paper:#f4f1eb;--white:#fffefa;--olive:#69745b;--olive-dark:#4f5b43;--line:#deded5;--sand:#e7e0d4;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(1200px,calc(100% - 48px));margin:auto}.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--olive);font-weight:700}.topline{background:#252922;color:#f7f5ef;font-size:11px;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:10px 16px}.header{position:sticky;top:0;z-index:20;background:rgba(244,241,235,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(32,34,31,.09)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-size:22px;line-height:1.02;letter-spacing:-.04em}.brand-mark{width:38px;height:38px;flex:0 0 38px;display:block}.brand small{display:block;font:9px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:7px}.navlinks{display:flex;gap:25px;font-size:12px;color:#51544e}.navlinks a:hover{color:var(--olive)}.navright{display:flex;align-items:center;gap:18px}.phone{font-size:13px;font-weight:700}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--ink);background:var(--ink);color:white;padding:15px 22px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;transition:.25s}.btn:hover{background:var(--olive-dark);border-color:var(--olive-dark);transform:translateY(-2px)}.btn.light{background:transparent;color:var(--ink)}.btn.light:hover{background:var(--ink);color:white}.menu-toggle{display:none;border:0;background:none;font-size:24px}
+.hero{padding:28px 0 76px}.hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;min-height:610px;background:#e8e4da}.hero-copy{padding:clamp(38px,6vw,82px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.hero h1{font:clamp(48px,6vw,82px)/.98 var(--serif);letter-spacing:-.055em;font-weight:400;margin:20px 0 24px;max-width:600px}.hero h1 em{color:var(--olive);font-style:italic}.hero p{color:#62665e;max-width:390px;font-size:15px;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{display:flex;gap:18px;margin-top:42px;color:#696d64;font-size:11px}.hero-note span{border-left:1px solid #c9c8be;padding-left:12px}.hero-image{min-height:520px;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.08)),url('assets/photos/project-01.webp') center/cover}.trust{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);padding:25px 0 34px;gap:18px}.trust-item{display:flex;gap:13px;align-items:center}.trust-icon{font:24px var(--serif);color:var(--olive)}.trust strong{display:block;font:16px var(--serif);font-weight:400}.trust small{color:var(--muted);font-size:11px}
+section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.section-head h2{font:clamp(38px,5vw,60px)/1.02 var(--serif);letter-spacing:-.05em;font-weight:400;margin:12px 0 0}.section-head p{max-width:340px;color:var(--muted);font-size:13px;margin:0}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category{background:var(--white);overflow:hidden;transition:.3s}.category:hover{transform:translateY(-5px);box-shadow:0 16px 35px #26281f12}.category-img{height:230px;background-size:cover;background-position:center;position:relative}.category-img:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#1115,transparent 55%)}.catalog-tools{display:grid;grid-template-columns:1.3fr 1fr;gap:12px;margin:-10px 0 24px}.catalog-tools input,.catalog-tools select{width:100%;padding:14px 16px;border:1px solid var(--line);background:var(--white);color:var(--ink)}.filter-count{font-size:11px;color:var(--muted);margin:-12px 0 18px}.category[hidden]{display:none}.category-body{padding:19px 20px 22px}.category-body h3{font:23px var(--serif);font-weight:400;margin:0 0 6px}.category-body p{font-size:11px;color:var(--muted);margin:0 0 15px}.arrow{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--olive-dark);font-weight:700}
+.promise{background:#292e27;color:#f7f5ef}.promise-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.promise h2{font:clamp(42px,5vw,64px)/1.02 var(--serif);font-weight:400;letter-spacing:-.05em;margin:14px 0 20px}.promise p{color:#c2c5bb;max-width:440px;font-size:14px}.promise-list{display:grid;grid-template-columns:1fr 1fr;gap:28px 24px}.promise-item{border-top:1px solid #5a6055;padding-top:17px}.promise-item b{font:30px var(--serif);font-weight:400;color:#d8ddcc;display:block;margin-bottom:8px}.promise-item span{font-size:12px;color:#c2c5bb}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}.step{padding:24px 24px 0 0;border-right:1px solid var(--line);margin-right:24px}.step:last-child{border:0;margin:0}.step-num{font:13px var(--serif);color:var(--olive)}.step h3{font:23px var(--serif);font-weight:400;margin:28px 0 8px}.step p{font-size:12px;color:var(--muted);max-width:220px}
+.calculator{background:#e7e3d9}.calc-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}.calc-panel{background:var(--white);padding:34px}.field{margin:0 0 22px}.field label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:9px}.field select,.field input,.field textarea{width:100%;border:1px solid var(--line);background:#fffefa;padding:14px;color:var(--ink);outline:none}.field select:focus,.field input:focus,.field textarea:focus{border-color:var(--olive)}.estimate{background:#292e27;color:#fff;padding:34px}.estimate small{color:#c4c8bd;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.estimate strong{font:48px var(--serif);font-weight:400;display:block;margin:12px 0}.estimate p{font-size:12px;color:#c4c8bd}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.project{min-height:330px;background-size:cover;background-position:center;position:relative;display:flex;align-items:end;padding:28px;color:white}.project:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#111b,transparent 65%)}.project div{position:relative}.project h3{font:30px var(--serif);font-weight:400;margin:0}.project p{font-size:11px;margin:5px 0 0;color:#e5e5df}.project.small{min-height:330px}.project-stack{display:contents}
+.cta{background:#d9d6ca;padding:70px 0}.cta-grid{display:flex;justify-content:space-between;align-items:center;gap:30px}.cta h2{font:clamp(36px,4vw,54px)/1.05 var(--serif);font-weight:400;letter-spacing:-.04em;margin:12px 0}.cta p{color:#666a61;font-size:13px;max-width:420px}
+.faq-list{max-width:800px;margin-left:auto}.faq{border-top:1px solid var(--line);padding:21px 0}.faq summary{cursor:pointer;list-style:none;font:22px var(--serif)}.faq summary::-webkit-details-marker{display:none}.faq p{font-size:13px;color:var(--muted);max-width:650px}
+.footer{background:#252922;color:#f5f3ed;padding:58px 0 24px}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:35px}.footer p,.footer a{font-size:12px;color:#c5c8be}.footer h4{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#aeb5a4}.footer a{display:block;margin:9px 0}.copyright{border-top:1px solid #4b5047;margin-top:45px;padding-top:18px;color:#aeb5a4;font-size:10px;display:flex;justify-content:space-between}
+.modal{display:none;position:fixed;inset:0;background:#111b;z-index:50;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-card{background:var(--white);width:min(500px,100%);padding:34px;position:relative}.modal-close{position:absolute;right:18px;top:14px;border:0;background:none;font-size:25px}.modal-card h2{font:34px var(--serif);font-weight:400;margin:8px 0 10px}.modal-card p{font-size:12px;color:var(--muted)}.success{display:none;padding:14px;background:#e8eee2;color:#35452f;font-size:13px;margin-top:12px}
+@media(max-width:900px){.navlinks{display:none;position:absolute;top:82px;left:0;right:0;background:var(--paper);padding:20px 24px;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu-toggle{display:block}.navright .phone{display:none}.hero-grid{grid-template-columns:1fr}.hero-image{min-height:390px;order:-1}.hero-copy{padding:42px}.trust{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:repeat(2,1fr)}.promise-grid,.calc-grid{grid-template-columns:1fr;gap:35px}.process{grid-template-columns:repeat(2,1fr);row-gap:30px}.step:nth-child(2){border-right:0}.projects{grid-template-columns:repeat(2,1fr)}.project-stack{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.catalog-tools{grid-template-columns:1fr}.wrap{width:min(100% - 30px,1200px)}.topline{font-size:9px}.nav{height:70px}.brand{font-size:19px}.brand-mark{width:32px;height:32px;flex-basis:32px}.navlinks{top:70px}.navright .btn{padding:12px 13px;font-size:9px}.hero{padding-top:15px;padding-bottom:45px}.hero-image{min-height:280px}.hero-copy{padding:32px 24px}.hero h1{font-size:48px}.hero-note{flex-direction:column;gap:8px}.trust{gap:20px 10px}.trust strong{font-size:14px}.trust small{font-size:10px}section{padding:68px 0}.section-head{display:block}.section-head p{margin-top:18px}.categories{gap:9px}.category-img{height:150px}.category-body{padding:14px}.category-body h3{font-size:18px}.category-body p{font-size:10px}.promise-list{gap:20px 12px}.promise-item b{font-size:25px}.process{grid-template-columns:1fr 1fr}.step{margin-right:14px;padding-right:12px}.step h3{font-size:19px}.calc-panel,.estimate{padding:24px}.project{min-height:300px}.projects{grid-template-columns:1fr}.project-stack{grid-template-columns:1fr}.project.small{min-height:230px}.cta-grid{display:block}.cta .btn{margin-top:15px}.footer-grid{grid-template-columns:1fr 1fr;gap:20px}.copyright{display:block;line-height:2}.modal-card{padding:27px 22px}}
+</style>
+</head>
+<body>
+<div class="topline">Собственное производство · Бесплатный замер и проект · Изготовление от 14 дней</div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#"><img class="brand-mark" src="assets/logo.svg" alt=""><span>КУХНЯ ДЛЯ ЛЮДЕЙ<small>пространство вашей жизни</small></span></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#catalog">Каталог</a><a href="#advantages">Преимущества</a><a href="#process">Как работаем</a><a href="#projects">Наши работы</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="navright"><span class="phone">Телефон скоро появится</span><button class="btn" onclick="openModal('Бесплатный замер')">Заказать замер</button><button class="menu-toggle" aria-label="Открыть меню" onclick="toggleMenu(this)" aria-expanded="false" aria-controls="navlinks">☰</button></div>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Кухни на заказ · Собственное производство</div>
+      <h1>Кухня, в которой <em>хорошо</em> жить</h1>
+      <p>Продумываем каждую деталь, чтобы ваша кухня была красивой, удобной и созданной именно под ваш образ жизни.</p>
+      <div class="hero-actions"><a class="btn" href="#catalog">Выбрать кухню</a><button class="btn light" onclick="openModal('Бесплатный дизайн-проект')">Получить проект</button></div>
+      <div class="hero-note"><span>Бесплатный замер</span><span>Проект в подарок</span><span>От 14 дней</span></div>
+    </div>
+    <div class="hero-image" role="img" aria-label="Современная светлая кухня"></div>
+  </div>
+  <div class="wrap trust">
+    <div class="trust-item"><div class="trust-icon">01</div><div><strong>Своё производство</strong><small>Контролируем качество</small></div></div>
+    <div class="trust-item"><div class="trust-icon">02</div><div><strong>Замер и проект — 0 ₽</strong><small>Помогаем на каждом этапе</small></div></div>
+    <div class="trust-item"><div class="trust-icon">14</div><div><strong>Изготовление от 14 дней</strong><small>Срок зависит от проекта</small></div></div>
+    <div class="trust-item"><div class="trust-icon">↗</div><div><strong>Доставка бесплатно</strong><small>В пределах МКАД</small></div></div>
+  </div>
+</section>
+
+<section id="catalog">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Найдите свой материал</div><h2>Кухни под ваш характер</h2></div><p>Разные фактуры, цвета и решения — от практичных вариантов на каждый день до выразительных дизайнерских кухонь.</p></div>
+    <div class="catalog-tools" aria-label="Фильтры каталога">
+      <input id="catalogSearch" type="search" placeholder="Найти материал или тип кухни…" aria-label="Поиск по каталогу">
+      <select id="catalogFilter" aria-label="Фильтр по категории">
+        <option value="all">Все категории</option><option value="natural">Натуральные материалы</option><option value="modern">Современные фасады</option><option value="custom">Индивидуальные решения</option><option value="budget">Эконом-класс</option>
+      </select>
+    </div>
+    <div class="filter-count" id="filterCount">Показаны все 8 направлений</div>
+    <div class="categories">
+      <a class="category" data-group="natural" data-search="массив дерево натуральный классика" href="catalog/massiv.html"><div class="category-img" style="background-image:url('assets/photos/project-06.webp')"></div><div class="category-body"><h3>Из массива</h3><p>Живая фактура натурального дерева</p><span class="arrow">Смотреть кухни ↗</span></div></a>
+      <a class="category" data-group="modern" data-search="пластик практичный фасад современный" href="catalog/plastik.html"><div class="category-img" style="background-image:url('assets/photos/project-02.webp')"></div><div class="category-body"><h3>Из пластика</h3><p>Практичность и выразительный цвет</p><span class="arrow">Смотреть кухни ↗</span></div></a>
+      <a class="category" data-group="modern" data-search="мдф пленка плёнка цвет фасад" href="catalog/mdf-plenka.html"><div class="category-img" style="background-image:url('assets/photos/project-03.webp')"></div><div class="category-body"><h3>МДФ плёнка</h3><p>Многообразие оттенков и дизайнов</p><span class="arrow">Смотреть кухни ↗</span></div></a>
+      <a class="category" data-group="modern" data-search="alvic алвик декор поверхность" href="catalog/alvic.html"><div class="category-img" style="background-image:url('assets/photos/project-01.webp')"></div><div class="category-body"><h3>ALVIC</h3><p>Современные декоративные поверхности</p><span class="arrow">Смотреть кухни ↗</span></div></a>
+      <a class="category" data-group="modern" data-search="эмаль крашеный фасад цвет" href="catalog/emal.html"><div class="category-img" style="background-image:url('assets/photos/project-05.webp')"></div><div class="category-body"><h3>Эмаль</h3><p>Глубокий цвет и безупречный вид</p><span class="arrow">Смотреть кухни ↗</span></div></a>
+      <a class="category" data-group="modern" data-search="agt фасады современный матовый" href="catalog/agt.html"><div class="category-img" style="background-image:url('assets/photos/project-02.webp')"></div><div class="category-body"><h3>AGT</h3><p>Лаконичные фасады для современного дома</p><span class="arrow">Смотреть кухни ↗</span></div></a>
+      <a class="category" data-group="custom" data-search="на заказ индивидуальный проект размер" href="catalog/na-zakaz.html"><div class="category-img" style="background-image:url('assets/photos/project-04.webp')"></div><div class="category-body"><h3>На заказ</h3><p>Индивидуальный проект под ваше пространство</p><span class="arrow">Смотреть кухни ↗</span></div></a>
+      <a class="category" data-group="budget" data-search="эконом недорогой доступный бюджет" href="catalog/ekonom.html"><div class="category-img" style="background-image:url('assets/photos/project-03.webp')"></div><div class="category-body"><h3>Эконом</h3><p>Удобная кухня с разумным бюджетом</p><span class="arrow">Смотреть кухни ↗</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="promise" id="advantages">
+ <div class="wrap promise-grid">
+  <div><div class="eyebrow" style="color:#c4ceb7">Почему выбирают нас</div><h2>Честный подход.<br>Продуманный результат.</h2><p>Мы объединяем производство, проектирование и заботу о клиенте в одном процессе. Вы понимаете, что происходит с вашей кухней, от первой идеи до доставки.</p><a class="btn" style="margin-top:18px;background:#f4f1eb;color:#252922;border-color:#f4f1eb" href="#process">Узнать, как работаем</a></div>
+  <div class="promise-list">
+   <div class="promise-item"><b>01</b><span>Собственное производство и контроль качества</span></div>
+   <div class="promise-item"><b>0 ₽</b><span>Бесплатный замер и дизайн-проект</span></div>
+   <div class="promise-item"><b>14 дней</b><span>Ориентир по сроку изготовления</span></div>
+   <div class="promise-item"><b>0 ₽</b><span>Доставка в пределах МКАД</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="process">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Понятно и прозрачно</div><h2>От идеи до вашей кухни</h2></div><p>Четыре понятных шага — с вниманием к деталям и вашему времени.</p></div>
+  <div class="process">
+   <div class="step"><span class="step-num">ШАГ 01</span><h3>Знакомимся</h3><p>Обсуждаем ваши пожелания, стиль, размеры и бюджет.</p></div>
+   <div class="step"><span class="step-num">ШАГ 02</span><h3>Замеряем и проектируем</h3><p>Бесплатно приезжаем на замер и готовим проект кухни.</p></div>
+   <div class="step"><span class="step-num">ШАГ 03</span><h3>Изготавливаем</h3><p>Запускаем согласованный проект в производство.</p></div>
+   <div class="step"><span class="step-num">ШАГ 04</span><h3>Доставляем</h3><p>Бесплатно доставляем заказ в пределах МКАД.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="calculator" id="calculator">
+ <div class="wrap calc-grid">
+  <div><div class="eyebrow">Подготовка к расчёту</div><h2 style="font:clamp(40px,5vw,60px)/1.02 var(--serif);font-weight:400;letter-spacing:-.05em;margin:14px 0 20px">Соберём параметры вашей кухни</h2><p style="color:var(--muted);font-size:14px;max-width:440px">Выберите основные параметры — мы приложим их к заявке. Стоимость не показываем до загрузки подтверждённого прайс-листа и формулы расчёта.</p></div>
+  <div class="calc-panel">
+   <div class="field"><label for="material">Материал фасадов</label><select id="material"><option>МДФ плёнка</option><option>Пластик</option><option>ALVIC</option><option>Эмаль</option><option>AGT</option><option>Массив</option><option>Пока не определился</option></select></div>
+   <div class="field"><label for="length">Примерная длина</label><select id="length"><option>До 2 метров</option><option selected>2–3 метра</option><option>3–4 метра</option><option>Более 4 метров</option><option>Пока не знаю</option></select></div>
+   <div class="field"><label for="layout">Планировка</label><select id="layout"><option>Прямая</option><option>Угловая</option><option>П-образная</option><option>С островом</option><option>Пока не знаю</option></select></div>
+   <div class="field"><label for="budget">Планируемый бюджет</label><select id="budget"><option>Нужна консультация</option><option>Эконом</option><option>Средний</option><option>Средний +</option><option>Премиум</option></select></div>
+   <div class="estimate"><small>Ваши параметры</small><strong id="estimate" style="font-size:28px">Кухня по вашим размерам</strong><p id="calcSummary">МДФ плёнка · 2–3 метра · Прямая · Нужна консультация</p><button class="btn" style="background:#f4f1eb;color:#252922;border-color:#f4f1eb" onclick="sendCalcToLead()">Запросить расчёт</button></div>
+  </div>
+ </div>
+</section>
+<section id="projects">
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Наши работы</div><h2>Кухни, которые мы создаём</h2></div><p>Реальные фотографии работ «Кухня для людей». Каждый проект создаётся с учётом пространства и пожеланий заказчика.</p></div>
+  <div class="projects">
+   <div class="project" style="background-image:url('assets/photos/project-01.webp')"><div><h3>Тёплое дерево</h3><p>Современная кухня с островом</p></div></div>
+   <div class="project" style="background-image:url('assets/photos/project-02.webp')"><div><h3>Графит и фактура</h3><p>Лаконичная угловая композиция</p></div></div>
+   <div class="project" style="background-image:url('assets/photos/project-03.webp')"><div><h3>Светлый минимализм</h3><p>Чистые линии и встроенная техника</p></div></div>
+   <div class="project" style="background-image:url('assets/photos/project-04.webp')"><div><h3>Компактное пространство</h3><p>Рациональное использование каждого метра</p></div></div>
+   <div class="project" style="background-image:url('assets/photos/project-05.webp')"><div><h3>Современная классика</h3><p>Белые фасады и тёплые акценты</p></div></div>
+   <div class="project" style="background-image:url('assets/photos/project-06.webp')"><div><h3>Классика с характером</h3><p>Детали и выразительная отделка</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="request" class="cta">
+ <div class="wrap cta-grid"><div><div class="eyebrow">Начнём с разговора</div><h2>Расскажите, какой вы<br>видите свою кухню</h2><p>Оставьте заявку — обсудим идеи, подберём материалы и договоримся о бесплатном замере.</p></div><button class="btn" onclick="openModal('Бесплатная консультация')">Обсудить мою кухню ↗</button></div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Полезно знать</div><h2>Частые вопросы</h2></div></div>
+  <div class="faq-list">
+   <details class="faq"><summary>Действительно ли замер и проект бесплатные?</summary><p>Да, замер и подготовка проекта заявлены как бесплатные услуги. Условия и географию выезда необходимо подтвердить при обращении.</p></details>
+   <details class="faq"><summary>Сколько времени занимает изготовление?</summary><p>Ориентир — от 14 дней после согласования проекта и необходимых условий заказа. Точный срок зависит от материалов, комплектации и загрузки производства.</p></details>
+   <details class="faq"><summary>Есть ли доставка?</summary><p>Бесплатная доставка предусмотрена в пределах МКАД. Возможность и стоимость доставки за пределы МКАД уточняются индивидуально.</p></details>
+   <details class="faq"><summary>Можно ли заказать кухню по индивидуальным размерам?</summary><p>Да. Кухня на заказ проектируется с учётом планировки помещения, бытовой техники, хранения и ваших пожеланий.</p></details>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="footer" id="contacts">
+ <div class="wrap">
+  <div class="footer-grid">
+   <div><a class="brand" href="#" style="color:#f5f3ed"><img class="brand-mark" src="assets/logo.svg" alt=""><span>КУХНЯ ДЛЯ ЛЮДЕЙ<small style="color:#aeb5a4">пространство вашей жизни</small></span></a><p>Кухни на заказ от собственного производства. Создаём пространство, в котором удобно жить.</p></div>
+   <div><h4>Навигация</h4><a href="#catalog">Каталог кухонь</a><a href="#advantages">Преимущества</a><a href="#process">Как работаем</a><a href="#projects">Наши работы</a></div>
+   <div><h4>Каталог</h4><a href="#catalog">Массив · Пластик · МДФ</a><a href="#catalog">ALVIC · Эмаль · AGT</a><a href="#catalog">На заказ · Эконом</a></div>
+   <div><h4>Связаться</h4><p>Телефон и электронная почта будут добавлены после подтверждения контактов.</p><p>Москва и Московская область</p><button class="btn" onclick="openModal('Обратный звонок')">Заказать звонок</button></div>
+  </div>
+  <div class="copyright"><span>© 2026 «Кухня для людей». Все права защищены.</span><span>Политика конфиденциальности · Реквизиты компании</span></div>
+ </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal-card">
+  <button class="modal-close" aria-label="Закрыть" onclick="closeModal()">×</button>
+  <div class="eyebrow">Кухня для людей</div><h2 id="modalTitle">Оставить заявку</h2><p>Оставьте контакты — мы свяжемся с вами и обсудим задачу.</p>
+  <form id="leadForm">
+   <div class="field"><label for="leadName">Ваше имя</label><input id="leadName" name="name" required placeholder="Как к вам обращаться"></div>
+   <div class="field"><label for="leadPhone">Телефон</label><input id="leadPhone" name="phone" required type="tel" placeholder="+7 ___ ___-__-__"></div>
+   <div class="field"><label for="leadComment">Комментарий (необязательно)</label><textarea id="leadComment" name="comment" rows="3" placeholder="Размеры, материал или пожелания"></textarea></div>
+   <button class="btn" type="submit" style="width:100%">Отправить заявку</button>
+   <div class="success" id="success" role="status"></div>
+   <p>Перед публикацией подключите реальную политику конфиденциальности и подтвердите согласие на обработку данных.</p>
+  </form>
+ </div>
+</div>
+<script>
+// Укажите URL собственного защищённого backend endpoint после настройки CRM.
+// Не помещайте токены Telegram/CRM в этот публичный файл.
+const LEAD_ENDPOINT = '';
+let currentLeadSource = 'Заявка с сайта';
+function openModal(title){document.getElementById('modalTitle').textContent=title;document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>document.getElementById('leadName').focus(),0)}
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+function updateCalc(){const summary=[document.getElementById('material').value,document.getElementById('length').value,document.getElementById('layout').value,'Бюджет: '+document.getElementById('budget').value].join(' · ');document.getElementById('calcSummary').textContent=summary;}
+['material','length','layout','budget'].forEach(id=>document.getElementById(id).addEventListener('change',updateCalc));updateCalc();
+function sendCalcToLead(){document.getElementById('leadComment').value='Параметры кухни: '+document.getElementById('calcSummary').textContent;currentLeadSource='Калькулятор';openModal('Расчёт стоимости кухни')}
+const search=document.getElementById('catalogSearch'), filter=document.getElementById('catalogFilter');
+function filterCatalog(){const q=(search.value||'').toLocaleLowerCase('ru');let shown=0;document.querySelectorAll('.category').forEach(card=>{const matchText=(card.innerText+' '+(card.dataset.search||'')).toLocaleLowerCase('ru').includes(q);const matchGroup=filter.value==='all'||card.dataset.group===filter.value;card.hidden=!(matchText&&matchGroup);if(!card.hidden)shown++;});document.getElementById('filterCount').textContent='Найдено направлений: '+shown+' из 8';}
+search.addEventListener('input',filterCatalog);filter.addEventListener('change',filterCatalog);filterCatalog();
+function toggleMenu(button){const nav=document.getElementById('navlinks');const opened=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(opened));}
+document.querySelectorAll('#navlinks a').forEach(link=>link.addEventListener('click',()=>{document.getElementById('navlinks').classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}));
+document.getElementById('leadForm').addEventListener('submit',async e=>{e.preventDefault();const form=e.currentTarget;const data=Object.fromEntries(new FormData(form).entries());data.source=currentLeadSource;const success=document.getElementById('success');const submit=form.querySelector('button[type="submit"]');submit.disabled=true;submit.textContent='Отправляем…';
+ try{if(!LEAD_ENDPOINT){success.style.display='block';success.textContent='Форма пока работает в демонстрационном режиме: заявка не отправлена. Для приёма обращений подключите защищённый серверный endpoint и CRM/Telegram.';return;}const response=await fetch(LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});if(!response.ok)throw new Error('HTTP '+response.status);success.style.display='block';success.textContent='Заявка отправлена. Спасибо!';form.reset();}
+ catch(err){success.style.display='block';success.textContent='Не удалось отправить заявку. Попробуйте позже или оставьте контакты другим согласованным способом.';}
+ finally{submit.disabled=false;submit.textContent='Отправить заявку';}
+});
+</script>
+</body>
+</html>
